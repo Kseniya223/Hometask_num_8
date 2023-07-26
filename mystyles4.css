@@ -1,28 +1,33 @@
 body {
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: 'Dosis', sans-serif;
   font-family: 'Inter', sans-serif;
   font-family: 'Roboto Slab', serif;
 }
 
+.main_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*стилізація хедеру*/
 .header_menu {
   display: flex;
   align-items: center;
-  }
+}
 
 .header_menu img[logo] {
  margin-top: 29px;
  margin-left: 50px;
  }
+
 .header_menu button {
   width: 57px;
   margin-top: 21px;
   margin-left: 20px;
   border: none;
   background: none;
-
 }
+
 .header_menu p {
   height: 24px;
   color: grey;
@@ -46,7 +51,9 @@ a {
   text-transform: uppercase;
 }
 
-.main_container {
+/*стилізація grid контейнеру*/
+
+.grid_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 90px 1fr 1fr;
@@ -66,10 +73,10 @@ a {
   font-size: 16px;
   font-weight: 700;
   margin-top: 160px;
- }
+  }
 
 .div_one h1 {
-  width: 425px;
+  max-width: 425px;
   color: black;
   text-transform: uppercase;
   font-size: 48px;
@@ -238,6 +245,7 @@ span {
   background: blue;
 }
 
+/*стилізація футеру*/
 footer {
   height: 926px;
   background: #0000ff;
@@ -271,24 +279,24 @@ footer .image {
 }
 
 .EMAIL {
-  position: absolute;
-  margin-top: 600px;
+  margin-top: 0;
   margin-left: 936px;
   max-width: 280px;
 }
 .EMAIL input{
+  margin-top: 650px;
   width: 280px;
   font-weight: 700;
   height: 30px;
   font-size: 16px;
+  color: black;
   border-top: none;
   border-left: none;
   border-right: none;
      }
 
 .information {
-  position: absolute;
-  margin-top: 700px;
+  margin-top: 50px;
   margin-left: 50px;
   max-width: 600px;
   background: blue;
@@ -296,9 +304,7 @@ footer .image {
   font-size: 16px;
 }
 
-.container3 {
-  position: absolute;
-  margin-top: 750px;
+.container4 {
   max-width: 180px;
   margin-left: 936px;
   display: flex;
@@ -307,7 +313,7 @@ footer .image {
   align-content: flex-start;
 }
 
-.container3 button {
+.container4 button {
   font-size: 16px;
   text-transform: uppercase;
   background: blue;
@@ -321,19 +327,19 @@ footer .image {
   border: none;
 }
 
-@media screen and (max-width: 800px) {
-  .main_container {
+@media screen and (max-width: 1440px) {
+  .grid_container {
  grid-template-columns: 1fr;
  }
  }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1440px) {
   h1 {
       font-size: 22px;
   }
   }
 
-  @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1440px) {
     h2 {
         font-size: 22px;
     }
